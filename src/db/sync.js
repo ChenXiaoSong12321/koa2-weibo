@@ -1,16 +1,20 @@
+/**
+ * @description sequelize 同步数据库
+ * @author jerry
+ */
+
 const seq = require('./seq');
 
-require('./model');
+require('./model/index');
 
-seq.authenticate()
-  .then(() => {
-    console.log('ok');
-  })
-  .catch(() => {
-    console.log('err');
-  });
+// 测试连接
+seq.authenticate().then(() => {
+  console.log('auth ok');
+}).catch(() => {
+  console.log('auth err');
+});
 
-//   执行同步
+// 执行同步
 seq.sync({ force: true }).then(() => {
   console.log('sync ok');
   process.exit();
