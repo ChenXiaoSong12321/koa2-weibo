@@ -1,6 +1,6 @@
 /**
  * @description res 的数据模型
- * @author jerry
+ * @author 双越老师
  */
 
 /**

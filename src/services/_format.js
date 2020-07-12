@@ -10,6 +10,7 @@ const { timeFormat } = require('../utils/dt');
  * 用户默认头像
  * @param {Object} obj 用户对象
  */
+// eslint-disable-next-line no-underscore-dangle
 function _formatUserPicture(obj) {
   if (obj.picture == null) {
     obj.picture = DEFAULT_PICTURE;
