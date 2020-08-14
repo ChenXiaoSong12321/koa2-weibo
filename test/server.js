@@ -1,6 +1,6 @@
 /**
  * @description jest server
- * @author 双越老师
+ * @author jerry
  */
 
 const request = require('supertest');
