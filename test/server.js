@@ -1,9 +1,9 @@
 /**
  * @description jest server
- * @author jerry
+ * @author 双越老师
  */
 
-const request = require('supertest');
-const server = require('../src/app').callback();
+const request = require('supertest')
+const server = require('../src/app').callback()
 
-module.exports = request(server);
+module.exports = request(server)
